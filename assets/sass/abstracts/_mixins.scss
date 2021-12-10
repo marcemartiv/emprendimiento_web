@@ -1,0 +1,27 @@
+@mixin text-align {
+
+    text-align: right;
+  }
+
+  @mixin cols {
+    text-align: center!important;
+    margin-left: 50px;
+  }
+  @mixin collage {
+        margin-top: 10px!important;
+        display: flex!important;
+        width: 0 60%!important;
+        flex: 100%!important;
+  }
+
+  @mixin dev {
+  width: 100%!important;
+  
+    max-width: 100%!important;
+  }
+
+@mixin collage-item {
+          flex: 0 100%!important;
+           flex-direction: column!important;
+            display: flex!important;
+}

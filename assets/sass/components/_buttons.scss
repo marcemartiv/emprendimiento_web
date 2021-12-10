@@ -1,0 +1,21 @@
+
+.button__footer {
+  &--2 {
+    font-size: 12px;
+    border-radius: 5px;
+    background-color:$tangerine;
+}
+}
+
+.button__footer {
+  &--1 {
+    
+    max-width: 100%;
+    font-size: 12px;
+    border-radius: 5px;
+}
+}
+.button__footer--2:hover {
+    background-color: $white;
+}
+  

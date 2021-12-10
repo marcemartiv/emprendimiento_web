@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+
+$ubuntu: 'Ubuntu', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+h1 {
+  font-family: $ubuntu;
+  font-weight: $bold;
+}
+
+h2 {
+  font-size:$small;
+  font-weight: $bold;
+}
+
+h3 {
+  font-family: $ubuntu;
+  font-size: $x-small;
+  font-weight: $bold;
+}
+
+h4 {
+  font-family: $poppins;
+  font-size: $x-small;
+}
+h5 {
+  color:$white;
+
+}
+
+p {
+  font-family: $ubuntu;
+  font-size: $x-small;
+}

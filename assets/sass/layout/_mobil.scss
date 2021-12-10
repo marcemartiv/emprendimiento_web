@@ -1,0 +1,35 @@
+//Desktop//
+@media  (max-width: $max-lg) {
+        h5 {
+    @include text-align;
+    
+        }
+    
+        div.col-lg-8.text-right.pb-0.legal {
+            @include cols;
+        }
+    
+        .section__main__collage {
+        @include collage;
+        }
+        .section__main {
+        &--collage-item {
+           flex: 0 100%!important;
+           flex-direction: column!important;
+        display: flex!important;
+            
+        }
+       
+        }
+        }
+        
+//Mobil Devices//
+        @media  (max-width: $max-sm) {
+            .developer {
+                @include dev;
+            
+        
+            }
+        }
+
+       

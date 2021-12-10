@@ -1,0 +1,136 @@
+a {
+  color: #F4F4F4;
+  font-family:monospace;
+  font-size:medium;
+  font-weight: 700;
+}
+.navbar {
+  background-color: #000;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  overflow: hidden;
+  background-color: #000;
+}
+.navbar li a {
+  display: block;
+  padding: 20px 20px;
+
+  text-decoration: none;
+  
+}
+.navbar li input{
+  display: block;
+  padding: 20px 20px;
+  border: 1px solid #F4F4F4;
+  
+}
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+  background-color: #333;
+}
+.navbar .menu-icon:hover {
+  background-color: #FFA500;
+}
+.navbar .logo {
+  display: block;
+  max-height: 50px;
+  position: relative;
+  float: left;
+  font-size: 2em;
+  padding: 10px 10px;
+}
+/* menu */
+.navbar .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+/* menu icon */
+.navbar .menu-icon {
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  transition: max-height .2s ease-out;
+  
+}
+.navbar .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+  .navbar .menu-icon:hover {
+    background-color: #F4F4F4;
+    
+  }
+}
+.navbar .menu-icon .navicon:before {
+  top: 5px;
+}
+.navbar .menu-icon .navicon:after {
+  top: -5px;
+}
+/* menu btn */
+.navbar .menu-btn {
+  display: none;
+}
+.navbar .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .navbar li {
+    float: right;
+  }
+  .navbar li a {
+    padding: 20px 30px;
+  }
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .navbar .menu-icon {
+    display: none;
+    float: right;
+  
+  }
+  
+}

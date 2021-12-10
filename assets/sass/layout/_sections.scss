@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.section__main__collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__main {
+&--collage-item {
+  border: 0.1px solid black;
+  flex: 0  48%;
+  width: 70%;
+  padding: 10px;
+  margin: 0 10px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 10px;
+}
+}
+
+.section__main--list {
+  padding-top: 10%;
+  margin-right: 70%;
+  
+
+}
+.fullwidth {
+  flex: 0 0 100%;
+}
+
+.section__main__article {
+&--image-html {
+  max-width:100%;
+  width: 100%;
+} 
+}
+
+.section__main {
+&--logo-development {
+  max-width: 25%;
+  border-radius: 100px;
+  border: 1px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}
+}
+
+.section__main {
+  display: flex;
+  justify-content: center;
+}
+
+.developer {
+  padding-top: 8%;
+  width: 40%;
+  
+}
+
+.section__main__article {
+&--title-html {
+  font-size: 16px;
+}
+}
+
+.section__main__article {
+&--paragraph-html {
+  font-size: 12px;
+}
+}
+
+.section__main__article {
+&--title-instructor {
+  font-size: $x-small;
+}
+}
+
+.fa-iconns  {
+  display: inline;
+  font-size: 15px;
+  
+}
+
+span {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.section__main__article {
+  border: 2px solid gainsboro;
+  margin: 7px!important;
+  padding: 7px!important;
+}
+
+.section__main {
+&--class-2021 {
+  margin-top: 7px;
+  justify-content: center;
+  display: flex;
+}
+}
+.section__main {
+&--class-2021-text {
+ font-size: 12px;
+}
+}
+.more__class {
+&--paragraph  {
+  display: flex;
+  justify-content: center;
+  color: $white;
+  background: $gray;
+  padding: 3px 0;
+}
+}
+.section__main {
+&--list {
+  display: flex;
+  justify-content: right!important;
+  font-size: 12px;
+}
+}
+
+.section__main {
+&--list-icons {
+  display: flex;
+  justify-content: center!important;
+  font-size: 14px;
+  margin-right: 35px;
+}
+}
+
+ul.a {list-style-type: circle;}
+
+.pl-5, .px-5 {
+  padding-left: 4rem !important;
+}
+
+.mt-5, .my-5 {
+  margin-top: 1rem !important;
+}
+
+.a li {
+ color: purple;
+}
+
+li::marker {
+ color: black;
+}
+
